@@ -74,8 +74,10 @@ def winner(board)
 
     if (board[win_index_1] == "X"  && board[win_index_2] == "X" && board[win_index_3] == "X")
       return "X"
-    else (board[win_index_1] == "O"  && board[win_index_2] == "O" && board[win_index_3] == "O")
+    elsif (board[win_index_1] == "O"  && board[win_index_2] == "O" && board[win_index_3] == "O")
       return "O"
+    else 
+      return nil
     end
   end
 end
